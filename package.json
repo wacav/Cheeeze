@@ -1,0 +1,27 @@
+{
+  "name": "cheeeze",
+  "version": "1.0.0",
+  "description": "discord, chat bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wacav/Cheeeze.git"
+  },
+  "keywords": [
+    "discord",
+    "chatbot"
+  ],
+  "author": "waCa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wacav/Cheeeze/issues"
+  },
+  "homepage": "https://github.com/wacav/Cheeeze#readme",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "dotenv": "^5.0.1"
+  }
+}
