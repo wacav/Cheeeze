@@ -2,8 +2,9 @@
   "name": "cheeeze",
   "version": "1.0.0",
   "description": "discord, chat bot",
-  "main": "app.js",
+  "main": "cheeeze/app.js",
   "scripts": {
+    "start": "node cheeeze/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,6 +23,8 @@
   "homepage": "https://github.com/wacav/Cheeeze#readme",
   "dependencies": {
     "discord.js": "^11.3.2",
-    "dotenv": "^5.0.1"
+    "dotenv": "^5.0.1",
+    "moment": "^2.21.0",
+    "path": "^0.12.7"
   }
 }

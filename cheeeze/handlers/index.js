@@ -1,8 +1,16 @@
+const hello = require('./hello')
+const error = require('./error')
+const lotto = require('./lotto')
+const magicSora = require('./magicSora')
+const weekLoading = require('./weekLoading')
 
-const setHandler = function (client) {
-    require('./hello')(client);
-    //ex : require('')(client);
+module.exports = function (client) {
+	//error handler
+	error(client)	
+    hello(client)
+    /** message events **/
+    lotto(client) 	
+    magicSora(client)
+    weekLoading(client)
+    
 }
-
-
-module.exports = setHandler

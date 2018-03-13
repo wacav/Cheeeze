@@ -1,9 +1,9 @@
-const hello = function(client){
-    client.on("message", (msg) => {
-        if(msg.content == '.아빠'){
-            msg.reply("아빠는 와카님입니다.");
-        }
+module.exports = client => {
+    client.on("guildMemberAdd", member => {
+        const channel = member.guild.channels.find('name', 'general');
+		// Do nothing if the channel wasn't found on this server
+		if (!channel) return;
+		// Send the message, mentioning the member
+		channel.send(`${member} 어서와 이 곳은 처음이지?`);
     })
-}
-
-module.exports = hello;
+};
