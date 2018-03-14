@@ -18,9 +18,9 @@ function setWeekBlock(weekPercent, isWeek){
 	const whileBlock = '□'
 	const total = blackBlock.repeat(blockCount) + whileBlock.repeat(20-blockCount)
 	if(isWeek){
-		return '월요일 로딩 중...  [' + total + ']'
+		return `월요일 로딩 중...  [${total}]`
 	} else {
-		return '주말 로딩 중.....  [' + total + ']'
+		return `주말 로딩 중.....  [${total}]`
 	}
 }
 

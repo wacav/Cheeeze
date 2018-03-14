@@ -223,7 +223,7 @@ module.exports = client => {
 		    }
 
 		    if(result.length == 6){
-		        msg.channel.send("로또 번호 [" + result + "]")
+		        msg.channel.send(`로또 번호 [${result}]`)
 		    }else {
 		        msg.channel.send("로또 번호 추첨 실패...")
 		    }
