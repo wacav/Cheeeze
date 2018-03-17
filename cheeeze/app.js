@@ -7,6 +7,7 @@ const token = process.env.DISCORD_TOKEN
 
 client.on('ready', () => {
 	client.user.setUsername('Cheeeze')
+	client.user.setAvatar('./cheeeze/images/cheeeze.png')
 });
 
 // Event Handlers
